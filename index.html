@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizNova - Online Quiz System</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Custom CSS -->
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+<!-- Animated Background -->
+<div class="background-shapes">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            🧠 QuizNova
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quiz">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#categories">Categories</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container text-center">
+
+        <div class="hero-icon">🧠</div>
+
+        <h1>
+            Test Your <span>Knowledge</span>
+        </h1>
+
+        <p>
+            Challenge yourself with fun, interactive and exciting quizzes.
+        </p>
+
+        <button class="btn start-btn" onclick="startQuiz()">
+            Start Quiz 🚀
+        </button>
+
+    </div>
+</section>
+
+
+<!-- Categories -->
+<section id="categories" class="container category-section">
+
+    <h2 class="section-title">Explore Categories</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-3">
+            <div class="category-card purple">
+                <div>💻</div>
+                <h4>Programming</h4>
+                <p>Test your coding skills</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="category-card pink">
+                <div>🌐</div>
+                <h4>Web Technology</h4>
+                <p>HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="category-card green">
+                <div>🤖</div>
+                <h4>Artificial Intelligence</h4>
+                <p>Explore AI knowledge</p>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="category-card orange">
+                <div>🧮</div>
+                <h4>Aptitude</h4>
+                <p>Improve logical thinking</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Quiz Section -->
+<section id="quiz" class="quiz-section">
+
+    <div class="container">
+
+        <div class="quiz-card">
+
+            <div class="quiz-header">
+
+                <div>
+                    <small>Question</small>
+                    <h4>
+                        <span id="questionNumber">1</span>/5
+                    </h4>
+                </div>
+
+                <div class="timer">
+                    ⏱ <span id="timer">30</span>s
+                </div>
+
+            </div>
+
+            <!-- Progress -->
+            <div class="progress mb-4">
+                <div id="progressBar"
+                     class="progress-bar"
+                     style="width:20%">
+                </div>
+            </div>
+
+            <h3 id="question">
+                Which language is used to create the structure of a webpage?
+            </h3>
+
+            <div id="options" class="options-container">
+
+                <button class="option" onclick="selectAnswer(thi

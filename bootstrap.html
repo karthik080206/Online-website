@@ -1,0 +1,73 @@
+/* Bootstrap Custom Utility Classes */
+
+
+/* Custom spacing */
+
+.quiz-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Custom rounded cards */
+
+.rounded-modern {
+    border-radius: 20px !important;
+}
+
+
+/* Custom shadow */
+
+.shadow-modern {
+    box-shadow: 0 15px 50px rgba(0,0,0,0.25) !important;
+}
+
+
+/* Gradient backgrounds */
+
+.bg-quiz-gradient {
+    background: linear-gradient(
+        135deg,
+        #7209b7,
+        #f72585
+    ) !important;
+}
+
+
+/* Custom button */
+
+.btn-quiz {
+    border: none;
+    border-radius: 30px;
+    padding: 12px 28px;
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(
+        90deg,
+        #7209b7,
+        #f72585
+    );
+    transition: all 0.3s ease;
+}
+
+
+.btn-quiz:hover {
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(247,37,133,0.4);
+}
+
+
+/* Bootstrap responsive enhancement */
+
+@media (max-width: 576px) {
+
+    .quiz-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn-quiz {
+        width: 100%;
+    }
+}
